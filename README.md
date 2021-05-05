@@ -22,7 +22,7 @@ I build batches of that so maybe it will not be ever available.
 **Using the Simple Wifi Modem**
 
 Plug it into an RS232 DB25 port (or, through an adapter, into a 9 pin serial) and power it connecting a standard micro usb cable to a USB port capable of providing at least 100mA at 5v DC.
-The device will turn on the Power LED (and CTS led if the jumper for flow control hardware is inserted).
+The device will turn on the Power LED (and CTS led if RTS/CTS flow control is set).
 Power on your computer and launch an ASCII terminal program and set the baud rate to 1200.
 If you now type ATI you must see the welcome message.
 To configure it use the command AT+CONFIG, follow the instructions and connect to a wireless router.  
@@ -32,7 +32,7 @@ When connected you can dial in to a bbs using ATDT [HOSTNAME]:[PORT]
 
 **Firmware upgrade**
 
-If needed you can upgrade the modem firmware or install whatever software you want. You can do in multiple ways. In every cases remove all the flow control jumpers: it’s better to leave GPIO2 low during these type of operations.
+If needed you can upgrade the modem firmware or install whatever software you want. You can do in multiple ways.
 
 [These are the complete instructions to load a firmware on the Simple Wifi RS232 modem.](/FIRMWARE.md)
 
